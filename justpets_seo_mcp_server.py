@@ -3,7 +3,8 @@ from fastapi import FastAPI, Request
 from fastmcp import FastMCP
 
 app = FastAPI()
-mcp = FastMCP(app, title="JustPets SEO MCP")
+mcp = FastMCP(app)
+
 
 # Tool: Add keywords to a list (simulate keyword tracking system)
 @mcp.tool
